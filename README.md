@@ -2,7 +2,6 @@
 Finishing the problem statement given by Quickwork for their assessment before hiring an intern.
 
 ## Problem Statement
-___
 Build an API in NodeJS using express to send emails using the Gmail REST API. Do not use the client libraries.
 Your application should -
 
