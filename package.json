@@ -1,0 +1,27 @@
+{
+	"name": "quickwork_task_1",
+	"version": "1.0.0",
+	"description": "Finishing the problem statement given by Quickwork for their assessment before hiring an intern.",
+	"main": "index.js",
+	"dependencies": {
+		"googleapis": "^39.2.0",
+		"http": "^0.0.1-security",
+		"open": "^7.3.0",
+		"server-destroy": "^1.0.1",
+		"url": "^0.11.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Coolchirutha/Quickwork_Task_1.git"
+	},
+	"author": "Mouni Nischal",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Coolchirutha/Quickwork_Task_1/issues"
+	},
+	"homepage": "https://github.com/Coolchirutha/Quickwork_Task_1#readme"
+}
