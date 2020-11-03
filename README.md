@@ -1,5 +1,5 @@
 # Send emails using NodeJS and OAuth 2.0
-Utilized Gmail REST API and OAuth 2.0 along with NodeJS to create a node app which will be able to send e-mails in Gmail after the user has authenticated using Google Cloud Console.
+Utilized Gmail REST API and OAuth 2.0 and NodeJS to create a node app that will be able to send e-mails in Gmail after the user has authenticated using Google Cloud Console.
 
 <!-- ## Problem Statement
 Build an API in NodeJS using express to send emails using the Gmail REST API.
@@ -23,7 +23,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 - #### Node installation on Ubuntu
 
-  You can install nodejs and npm in Ubuntu easily with apt install, just run the following 2 commands.
+  You can install nodejs and npm in Ubuntu easily with apt install. Just run the following 2 commands.
 
       $ sudo apt install nodejs
       $ sudo apt install npm
@@ -39,7 +39,7 @@ If the installation was successful, you should be able to run the following comm
     $ npm --version
     6.1.0
 
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open the command line again and be happy.
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, open the command line again and be happy.
 
     $ npm install npm -g
 
@@ -55,7 +55,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Configure app
 
 
-For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET` and `REDIRECT_URL`. You can find these pieces of information by going to the [Developer Console][devconsole], clicking your project --> APIs & auth --> credentials.
+For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET`,and `REDIRECT_URL`. You can find these pieces of information by going to the [Developer Console][devconsole], clicking your project --> APIs & auth --> credentials.
 
 - Go to the Cloud Console API Library.
 - From the projects list, select the project you want to use(or create a new one).
@@ -66,7 +66,7 @@ For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET` and `REDIRE
 - Navigate to the Cloud Console and [Create a new OAuth2 Client Id](https://console.cloud.google.com/apis/credentials/oauthclient)
 - Select `Web Application` for the application type
 - Add an authorized redirect URI with the value `http://localhost:3000/oauth2callback` (or applicable value for your scenario)
-- Click `Create`, and `Ok` on the following screen
+- Click `Create` and `Ok` on the following screen
 - Click the `Download` icon next to your newly created OAuth2 Client Id
 
 Make sure to store this file in the root directory as `credentials.json`
