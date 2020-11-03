@@ -11,7 +11,6 @@ Your application should -
 4. Include appropriate comments in your code on how to use the APIs written by you.
 5. Upload the server code to your Github and share the repository link with us. There is no need for a visual interface, only the server code is needed. -->
 
----
 ## Requirements
 
 For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
