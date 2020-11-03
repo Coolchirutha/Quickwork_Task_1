@@ -1,5 +1,5 @@
 # Send emails using NodeJS and OAuth 2.0
-Utilized Gmail REST API and OAuth 2.0 along with NodeJS to create a node app which will be able to send e-mails in Gmail after the user has authenticated using google cloud console.
+Utilized Gmail REST API and OAuth 2.0 along with NodeJS to create a node app which will be able to send e-mails in Gmail after the user has authenticated using Google Cloud Console.
 
 <!-- ## Problem Statement
 Build an API in NodeJS using express to send emails using the Gmail REST API.
@@ -13,17 +13,17 @@ Your application should -
 
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js and a node global package installed in your environment.
 
 ### Node
 - #### Node installation on Windows
 
-  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+  Just go on to the  [official Node.js website](https://nodejs.org/) and download the installer.
 Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
 - #### Node installation on Ubuntu
 
-  You can install nodejs and npm easily with apt install, just run the following commands.
+  You can install nodejs and npm in Ubuntu easily with apt install, just run the following 2 commands.
 
       $ sudo apt install nodejs
       $ sudo apt install npm
