@@ -132,10 +132,10 @@ function makeBody(to, from, subject, message) {
 function sendMail(auth) {
 	const gmail = google.gmail({ version: "v1", auth });
 	var raw = makeBody(
-		"d.chiranjeevi007@gmail.com", // To address
-		"d.chiranjeevi007@gmail.com", // From address (only the user's email id works)
-		"TEsting", // Subject of the mail
-		"I have finished my work successfully" // Content of the mail
+		"ToAddress@gmail.com", // To address
+		"FromAddress@gmail.com", // From address (only the user's email id works)
+		"Compose your subject here", // Subject of the mail
+		"Compose your content of the mail here" // Content of the mail
 	);
 
 	let mail = gmail.users.messages.send(

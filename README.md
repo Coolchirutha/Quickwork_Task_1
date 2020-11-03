@@ -72,6 +72,10 @@ For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET`,and `REDIRE
 Make sure to store this file in the root directory as `credentials.json`
 
 ## Running the project
+To edit the contents and details of the mail to be sent. Edit
+[This snippet of code.](https://github.com/Coolchirutha/Quickwork_Task_1/blob/e56886a2df2346613632cc0a60548222dff53fad/index.js#L135-L138) I've commented the code appropriately.
+
+After editing the code as per your requirements. Run the following command in the terminal to run the code and follow the on-screen instructions to give consent for the app.
 
     $ node index.js
 
