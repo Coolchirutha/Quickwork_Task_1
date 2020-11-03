@@ -31,7 +31,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 - #### Other Operating Systems
   You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
-If the installation was successful, you should be able to run the following command.
+If the installation was successful, you should be able to run the following commands.
 
     $ node --version
     v8.11.3
@@ -39,31 +39,38 @@ If the installation was successful, you should be able to run the following comm
     $ npm --version
     6.1.0
 
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open the command line again and be happy.
 
     $ npm install npm -g
 
 ###
-### Yarn installation
-  After installing node, this project will need yarn too, so just run the following command.
-
-      $ npm install -g yarn
-
 ---
 
 ## Install
 
     $ git clone https://github.com/Coolchirutha/Quickwork_Task_1.git
-    $ cd PROJECT_TITLE
-    $ yarn install
+    $ cd Quickwork_Task_1
+    $ npm install
 
 ## Configure app
 
 Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 
-- To use OAuth2 authentication, we need access to a a CLIENT_ID, CLIENT_SECRET, AND REDIRECT_URI.  To get these credentials for your application, visit https://console.cloud.google.com/apis/credentials.;
-- Another setting;
-- One more setting;
+For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET` and `REDIRECT_URL`. You can find these pieces of information by going to the [Developer Console][devconsole], clicking your project --> APIs & auth --> credentials.
+
+- Go to the Cloud Console API Library.
+- From the projects list, select the project you want to use(or create a new one).
+- In the API Library, select the Gmail API.
+- If you need help finding the API, use the search field and/or the filters.
+- On the Gmail API page, click ENABLE.
+
+- Navigate to the Cloud Console and [Create a new OAuth2 Client Id](https://console.cloud.google.com/apis/credentials/oauthclient)
+- Select `Web Application` for the application type
+- Add an authorized redirect URI with the value `http://localhost:3000/oauth2callback` (or applicable value for your scenario)
+- Click `Create`, and `Ok` on the following screen
+- Click the `Download` icon next to your newly created OAuth2 Client Id
+
+Make sure to store this file in the root directory as `credentials.json`
 
 ## Running the project
 
