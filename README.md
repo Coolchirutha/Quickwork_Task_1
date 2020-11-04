@@ -57,34 +57,34 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET`,and `REDIRECT_URL`. You can find these pieces of information after , clicking your project --> APIs & auth --> credentials.
 
-- Go to the [Google Cloud Console](http://console.cloud.google.com/) and log in using your google account
+1. Go to the [Google Cloud Console](http://console.cloud.google.com/) and log in using your google account
 
-- From the projects list, select the project you want to use(or create a new one).
+2. From the projects list, select the project you want to use(or create a new one).
 
-- If the APIs & services page isn't already open, open the console left side menu and select **APIs & services**, and then select **Library**.
+3. If the APIs & services page isn't already open, open the console left side menu and select **APIs & services**, and then select **Library**.
 
-- Search for the **Gmail API** and click **ENABLE**.
+4. Search for the **Gmail API** and click **ENABLE**.
 
-- Now once again open the console left side menu and under **APIs & Services**, select **Credentials**.
+5. Now once again open the console left side menu and under **APIs & Services**, select **Credentials**.
 
-- If this is your first time creating credentials in this project, use the sub-steps below to setup the OAuth consent page; otherwise, skip to the next step.
-  - Click **CONFIGURE CONSENT SCREEN**.
-  - Select **External** as the **User Type**
-  - Enter a name in the **App name** field.
-  - Fill out the rest of the fields as needed.
-  - Click **Save**.
+6. If this is your first time creating credentials in this project, use the sub-steps below to setup the OAuth consent page; otherwise, skip to the next step.
+   - Click **CONFIGURE CONSENT SCREEN**.
+   - Select **External** as the **User Type**
+   - Enter a name in the **App name** field.
+   - Fill out the rest of the fields as needed.
+   - Click **Save**.
 
-- In the **Create credentials** drop-down list, select OAuth client ID.
+7. In the **Create credentials** drop-down list, select OAuth client ID.
 
-- Select **Web application** as the **Application type**.
+8. Select **Web application** as the **Application type**.
 
-- In **Name**, enter a name for your client ID.
+9. In **Name**, enter a name for your client ID.
 
-- Under **Authorized redirect URIs** click on ***ADD URI** and add the value  `http://localhost:3000/oauth2callback` (or applicable value for your scenario)
+10. Under **Authorized redirect URIs** click on ***ADD URI** and add the value  `http://localhost:3000/oauth2callback` (or applicable value for your scenario)
 
-- Click **Create** and **Ok** on the following screen
+11. Click **Create** and **Ok** on the following screen
 
-- Click the **Download icon** next to your newly created OAuth2 Client Id
+12. Click the **Download icon** next to your newly created OAuth2 Client Id
 
 Make sure to store this file in the root directory as `credentials.json`
 
