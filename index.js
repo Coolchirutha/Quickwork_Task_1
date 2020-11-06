@@ -44,7 +44,6 @@ const oAuth2Client = new google.auth.OAuth2(
 // Configuring googleapis tpo use aOAuth2 client
 google.options({ auth: oAuth2Client });
 
-
 // Creating the OAuth2 client and then executing the callback function
 async function authenticate(scopes) {
 	return new Promise((resolve, reject) => {
@@ -59,14 +58,10 @@ async function authenticate(scopes) {
 					if (req.url.indexOf("/oauth2callback") > -1) {
 						const qs = new url.URL(req.url, "http://localhost:3000")
 							.searchParams;
-						res.end(
-							"Authentication successful! Please return to the console."
-						);
+						res.end("Authentication successful! Please return to the console.");
 						server.destroy();
 
-						const { tokens } = await oAuth2Client.getToken(
-							qs.get("code")
-						);
+						const { tokens } = await oAuth2Client.getToken(qs.get("code"));
 
 						// Creating the credentials
 						oAuth2Client.credentials = tokens;
@@ -75,19 +70,15 @@ async function authenticate(scopes) {
 						fs.readFile(TOKEN_PATH, (err, token) => {
 							if (err) {
 								// Storing the obtained credentials into a file.
-								fs.writeFile(
-									TOKEN_PATH,
-									JSON.stringify(tokens),
-									(err) => {
-										if (err) {
-											return console.error(err);
-										}
-										console.log(
-											"User access token stored offline to ",
-											TOKEN_PATH
-										);
+								fs.writeFile(TOKEN_PATH, JSON.stringify(tokens), (err) => {
+									if (err) {
+										return console.error(err);
 									}
-								);
+									console.log(
+										"User access token stored offline to ",
+										TOKEN_PATH
+									);
+								});
 							}
 						});
 						resolve(oAuth2Client);

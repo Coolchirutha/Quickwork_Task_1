@@ -1,4 +1,5 @@
 # Send emails using NodeJS and OAuth 2.0
+
 Utilized Gmail REST API and OAuth 2.0 and NodeJS to create a node app that will be able to send e-mails in Gmail after the user has authenticated using Google Cloud Console.
 
 <!-- ## Problem Statement
@@ -16,10 +17,11 @@ Your application should -
 For development, you will only need Node.js and a node global package installed in your environment.
 
 ### Node
+
 - #### Node installation on Windows
 
-  Just go on to the  [official Node.js website](https://nodejs.org/) and download the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+  Just go on to the [official Node.js website](https://nodejs.org/) and download the installer.
+  Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
 - #### Node installation on Ubuntu
 
@@ -44,6 +46,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ npm install npm -g
 
 ###
+
 ---
 
 ## Install
@@ -53,7 +56,6 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ npm install
 
 ## Configure app
-
 
 For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET`,and `REDIRECT_URL`. You can find these pieces of information after , clicking your project --> APIs & auth --> credentials.
 
@@ -68,6 +70,7 @@ For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET`,and `REDIRE
 5. Now once again open the console left side menu and under **APIs & Services**, select **Credentials**.
 
 6. If this is your first time creating credentials in this project, use the sub-steps below to setup the OAuth consent page; otherwise, skip to the next step.
+
    - Click **CONFIGURE CONSENT SCREEN**.
    - Select **External** as the **User Type**
    - Enter a name in the **App name** field.
@@ -80,7 +83,7 @@ For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET`,and `REDIRE
 
 9. In **Name**, enter a name for your client ID.
 
-10. Under **Authorized redirect URIs** click on ***ADD URI** and add the value  `http://localhost:3000/oauth2callback` (or applicable value for your scenario)
+10. Under **Authorized redirect URIs** click on **\*ADD URI** and add the value `http://localhost:3000/oauth2callback` (or applicable value for your scenario)
 
 11. Click **Create** and **Ok** on the following screen
 
@@ -89,10 +92,10 @@ For using this project, you will need a `CLIENT_ID`, `CLIENT_SECRET`,and `REDIRE
 Make sure to store this file in the root directory as `credentials.json`
 
 ## Running the project
+
 To edit the contents and details of the mail to be sent. Edit
 [This snippet of code.](https://github.com/Coolchirutha/Quickwork_Task_1/blob/e56886a2df2346613632cc0a60548222dff53fad/index.js#L135-L138) I've commented the code appropriately.
 
 After editing the code as per your requirements. Run the following command in the terminal to run the code and follow the on-screen instructions to give consent for the app.
 
     $ node index.js
-
